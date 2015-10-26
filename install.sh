@@ -109,7 +109,7 @@ do
 done
 
 # Show list of Google Chrome Extensions to Install
-echo -e "\n> Chrome Extensions Reminder:\n"
+echo -e "\n> Chrome Extensions Reminder (https://chrome.google.com/webstore/category/extensions?hl=en-US):\n"
 
 IFS=$'\n' read -d '' -r -a extensions < ./chrome.txt
 for extension in "${extensions[@]}"
@@ -117,5 +117,17 @@ do
     #Ignore commented lines
     if ! [[ $extension =~ ^[[:space:]]*\#.* ]]; then
         echo -e "\t$extension"
+    fi
+done
+
+# Show list of Alfred Workflows to Install
+echo -e "\n> Alfred Workflows Reminder (http://www.packal.org/):\n"
+
+IFS=$'\n' read -d '' -r -a workflows < ./alfred.txt
+for workflow in "${workflows[@]}"
+do
+    #Ignore commented lines
+    if ! [[ $workflow =~ ^[[:space:]]*\#.* ]]; then
+        echo -e "\t$workflow"
     fi
 done

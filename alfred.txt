@@ -1,0 +1,14 @@
+# Alfred Workflows
+Clean App
+Encode / Decode
+Hash
+Homebrew & Cask for Alfred
+Kill Process
+man
+Packal Search
+Packal Updater
+StackOverflow
+SynAnt
+Text Tokenizer
+Translate
+Units
