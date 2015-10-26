@@ -1,0 +1,16 @@
+# Extensions
+AdBlock
+Cardboard (New Tab Page)
+Ghostery
+Google Hangouts
+Hacker News Enhancement Suite
+Hover Free
+HTTPS Everywhere
+Markdown Here
+Reddit Enhancement Suite
+Save as PDF
+Session Buddy
+Wikiwand
+
+# Theme
+Black & White Theme

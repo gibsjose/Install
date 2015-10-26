@@ -1,0 +1,11 @@
+# Apps
+Adobe CS5 Master Collection Trial (https://helpx.adobe.com/creative-suite/kb/cs5-product-downloads.html)
+Parallels Desktop 9
+Synergy
+
+# Command-line Tools
+pdflatex via MacTeX (https://www.tug.org/mactex/)
+
+# Installations
+[P4Merge Git Setup](https://gist.github.com/tony4d/3454372)
+[gdb](http://sourceware.org/gdb/wiki/BuildingOnDarwin)

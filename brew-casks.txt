@@ -1,0 +1,30 @@
+1password
+adobe-reader
+alfred
+# android-file-transfer
+# android-studio
+arduino
+atom
+# bettersnaptool
+caffeine
+cathode
+coolterm
+encryptr
+flux
+go2shell
+google-chrome
+google-drive
+google-hangouts
+kicad
+# mactracker
+minecraft
+p4merge
+recordit
+skype
+slack
+spectacle
+spotify
+steam
+the-unarchiver
+whiskey
+wireshark

@@ -1,0 +1,15 @@
+avrdude
+bcrypt
+boost
+cryptopp
+emacs
+fish
+gdb
+hub
+#kdiff3
+lynx
+minicom
+openssl
+pandoc
+valgrind
+wget
