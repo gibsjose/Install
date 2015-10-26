@@ -9,6 +9,7 @@
 # @TODO Add the following to brew cask:
 #   > bettersnaptool
 #   > synergy
+#   > yakyak (https://github.com/yakyak/yakyak)
 
 # Grab functions
 source ./functions.sh
