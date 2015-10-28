@@ -15,14 +15,14 @@
 source ./functions.sh
 
 # Install Xcode and Developer Tools
-if xcode-select -p; then
+if xcode-select -p >/dev/null; then
     echo "> Xcode Developer Tools already installed"
     echo
 elif exists "xcode-select"; then
     if prompt 'xcode-select'; then
-        echo "> Installing Xcode Developer Tools..."
-        # xcode-select --install
-        echo
+        echo "> Install the Xcode Developer Tools and run this script again"
+        xcode-select --install
+        exit 0
     fi
 fi
 
@@ -34,7 +34,7 @@ elif exists 'ruby'; then
     if exists 'curl'; then
         if prompt 'brew'; then
             echo "> Installing 'brew'"
-            # ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+            ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
             BREW_DIR=`command -v brew`
             echo "  Installed 'brew' to $BREW_DIR"
             echo
@@ -49,7 +49,7 @@ if exists 'brew-cask'; then
 elif exists 'brew'; then
     if prompt 'brew cask'; then
         echo "> Installing 'brew cask'"
-        # brew install caskroom/cask/brew-cask
+        brew install caskroom/cask/brew-cask
         BREW_CASK_DIR=`command -v brew-cask`
         echo "  Installed 'brew cask' to $BREW_CASK_DIR"
         echo

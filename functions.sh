@@ -21,8 +21,8 @@ prompt() {
 exists() {
     command -v $1 >/dev/null 2>&1
     if [ $? -eq 1 ]; then
-        echo >&2 "! Error: '$1' not found";
-        exit 1
+        # echo >&2 "! Error: '$1' not found";
+        return 1
     else
         return 0
     fi
