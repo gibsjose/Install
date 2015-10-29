@@ -1,6 +1,10 @@
 # Prompt user to continue
 prompt() {
-    read -p "    Install $1? [Y/n] " -r
+    colour_yellow='\e[1;33m'
+    colour_green='\e[1;32m'
+    colour_off='\e[0m'
+    prompt_var=$(printf "\t\b\b${colour_yellow}*${colour_off} Install $1? ${colour_green}[Y/n]${colour_off} ")
+    read -p "$prompt_var" -r
 
     # Use this one in combo with the echo to skip having to press
     # <ENTER> after typing 'n' or 'Y'...

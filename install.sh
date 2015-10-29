@@ -28,15 +28,15 @@ fi
 
 # Install 'brew'
 if exists 'brew'; then
-    echo "> 'brew' already installed"
+    echo "> Homebrew already installed"
     echo
 elif exists 'ruby'; then
     if exists 'curl'; then
-        if prompt 'brew'; then
-            echo "> Installing 'brew'"
+        if prompt 'Homebrew'; then
+            echo "> Installing Homebrew"
             ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
             BREW_DIR=`command -v brew`
-            echo "  Installed 'brew' to $BREW_DIR"
+            echo "  Installed Homebrew to $BREW_DIR"
             echo
         fi
     fi
@@ -44,24 +44,22 @@ fi
 
 # Install 'brew cask'
 if exists 'brew-cask'; then
-    echo "> 'brew-cask' already installed"
+    echo "> Homebrew Cask already installed"
     echo
 elif exists 'brew'; then
-    if prompt 'brew cask'; then
-        echo "> Installing 'brew cask'"
+    if prompt 'Homebrew Cask'; then
+        echo "> Installing Homebrew Cask"
         brew install caskroom/cask/brew-cask
         BREW_CASK_DIR=`command -v brew-cask`
-        echo "  Installed 'brew cask' to $BREW_CASK_DIR"
+        echo "  Installed Homebrew Cask to $BREW_CASK_DIR"
         echo
     fi
 fi
 
 # Install 'brew' formulae
 IFS=$'\n' read -d '' -r -a formulae < ./brew-formulae.txt
-F=`printf "\n\t%s" "${formulae[@]}"`
-# prompt $F
 
-echo -e "> Installing 'brew' formulae:\n"
+echo -e "> Installing Formulae:\n"
 for formula in "${formulae[@]}"
 do
     #Ignore commented lines
@@ -69,7 +67,12 @@ do
         continue
         # echo -e "    [x] skipping $formula"
     else
-        brew_formula $formula
+        # Check if already installed
+        if brew ls $formula >/dev/null 2>&1; then
+            echo -e "\t$formula is already installed"
+        else
+            brew_formula $formula
+        fi
     fi
 done
 echo
@@ -79,10 +82,8 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications --fontdir=/Library/Fonts"
 
 # Install 'brew' casks
 IFS=$'\n' read -d '' -r -a casks < ./brew-casks.txt
-C=`printf "\n\t%s" "${casks[@]}"`
-# prompt $C
 
-echo -e "> Installing 'brew' casks:\n"
+echo -e "> Installing Casks:\n"
 for cask in "${casks[@]}"
 do
     #Ignore commented lines
@@ -90,15 +91,20 @@ do
         continue
         # echo -e "    [x] skipping $cask"
     else
-        brew_cask $cask
+        if brew cask ls $cask >/dev/null 2>&1; then
+            echo -e "\t$cask is already installed"
+        else
+            brew_cask $cask
+        fi
     fi
 done
 
 # Brew Cleanup
 echo -ne "\n> Brew Cleanup..."
-# brew cleanup --force
-# rm -f -r /Library/Caches/Homebrew/*
+brew cleanup --force
+rm -rf /Library/Caches/Homebrew/*
 echo -e " Done.\n"
+sleep 1
 
 # Show list of Appstore Apps to Install
 IFS=$'\n' read -d '' -r -a apps < ./appstore.txt
