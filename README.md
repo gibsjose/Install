@@ -1,8 +1,19 @@
 # OS X Automated Install
 This `bash` script automates the installation of OS X applications and command line tools by using `brew` and `brew cask` to install from a list of desired formulae and casks.
 
+The primary motivation for this project is to reduce the normal frustration of reinstalling all of your software and command line tools every time OS X is updated and a clean-install is performed.
+
 ## Usage
-To run, simply overwrite `brew-formulae.txt` and `brew-casks.txt` with your own formulae and casks lists, and then run the script:
+To run, simply overwrite `brew-formulae.txt` and `brew-casks.txt` with your own formulae and casks lists.
+
+If you would like to generate a list of installed brew formulae and casks on an existing machine, simply run:
+
+```bash
+brew list > brew-formulae.txt
+brew cask list > brew-casks.txt
+```
+
+Once you have the lists all set, just run the script:
 
 ```bash
 ./install
