@@ -4,7 +4,7 @@ boost
 cryptopp
 emacs
 fish
-gdb
+homebrew/dupes/gdb
 hub
 #kdiff3
 lynx
