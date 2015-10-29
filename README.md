@@ -1,6 +1,4 @@
 # OS X Automated Install
-25 Oct 2015
-
 This `bash` script automates the installation of OS X applications and command line tools by using `brew` and `brew cask` to install from a list of desired formulae and casks.
 
 ## Operation
