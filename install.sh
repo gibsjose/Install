@@ -6,11 +6,6 @@
 # https://apple.stackexchange.com/questions/107307/how-can-i-install-the-command-line-tools-completely-from-the-command-line
 # List of all CLI tools installed: http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/
 
-# @TODO Add the following to brew cask:
-#   > bettersnaptool
-#   > synergy
-#   > yakyak (https://github.com/yakyak/yakyak)
-
 # Grab functions
 source ./functions.sh
 
