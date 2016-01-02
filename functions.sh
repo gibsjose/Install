@@ -32,6 +32,15 @@ exists() {
     fi
 }
 
+# Install brew taps
+brew_tap() {
+    if prompt $1; then
+        echo -e "\tbrew tap $1"
+        brew tap $1
+        echo
+    fi
+}
+
 # Install brew formula
 brew_formula() {
     if prompt $1; then

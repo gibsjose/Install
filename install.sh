@@ -51,6 +51,22 @@ elif exists 'brew'; then
     fi
 fi
 
+# Install 'brew' taps
+IFS=$'\n' read -d '' -r -a taps < ./brew-taps.txt
+
+echo -e "> Installing Taps:\n"
+for tap in "${taps[@]}"
+do
+    #Ignore commented lines
+    if [[ $tap =~ ^[[:space:]]*\#.* ]]; then
+        continue
+        # echo -e "    [x] skipping $tap"
+    else
+        brew_tap $tap
+    fi
+done
+echo
+
 # Install 'brew' formulae
 IFS=$'\n' read -d '' -r -a formulae < ./brew-formulae.txt
 
