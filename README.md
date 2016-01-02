@@ -17,7 +17,7 @@ brew cask list > brew-casks.txt
 Once you have the lists all set, just run the script:
 
 ```bash
-./install
+./install.sh
 ```
 
 ## Operation
