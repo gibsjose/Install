@@ -3,10 +3,10 @@ This `bash` script automates the installation of OS X applications and command l
 
 The primary motivation for this project is to reduce the normal frustration of reinstalling all of your software and command line tools every time OS X is updated and a clean-install is performed.
 
-## Usage
-To run, simply overwrite `brew-taps.txt`, `brew-formulae.txt`, and `brew-casks.txt` with your own formulae and casks lists.
+## Setup
+To setup the script, simply overwrite `brew-taps.txt`, `brew-formulae.txt`, and `brew-casks.txt` with your own tap, formula, and cask lists.
 
-If you would like to generate a list of installed brew taps, formulae, and casks on an existing machine, simply run:
+If you would like to generate a list of installed taps, formulae, and casks on an existing machine, simply run:
 
 ```bash
 brew tap > brew-taps.txt
@@ -14,20 +14,7 @@ brew leaves > brew-formulae.txt
 brew cask list > brew-casks.txt
 ```
 
-Once you have the lists all set, just run the script:
-
-```bash
-./install.sh
-```
-
-## Operation
-The script first installs Xcode's command line tools, and then attempts to install first `brew`, and then `brew cask`, before installing the formulae and casks located in `brew-formulae.txt` and `brew-casks.txt`.
-
-By default, the script prompts the user before installing anything.
-
-After installing all formulae and casks, the script displays a reminder of all Appstore Applications that should be installed, as well as Google Chrome Extensions.
-
-To comment out a formula or cask, simply prefix the entry with '#', as you would with any `bash` comment.
+To comment out a tap, formula, or cask, simply prefix the entry with '#', as you would with any `bash` comment.
 
 ```bash
 ...
@@ -37,3 +24,22 @@ atom
 google-chrome
 ...
 ```
+
+## Usage
+Once you have the lists all set, just run the script:
+
+```bash
+./install.sh
+```
+
+> **Note**: By default, the script prompts the user before installing anything.
+
+## Operation
+The script installs the following, in order:
+1. Xcode's command line tools
+2. `brew`
+3. `brew cask`
+3. External taps located in `brew-taps.txt`
+4. Formulae located in `brew-formulae.txt`
+5. Casks located in `brew-casks.txt`
+6. Display reminder of all Appstore Applications and Google Chrome Extensions
