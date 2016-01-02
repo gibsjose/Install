@@ -1,0 +1,7 @@
+caskroom/cask
+gibsjose/crypto
+homebrew/boneyard
+homebrew/dupes
+homebrew/versions
+osx-cross/avr
+tldr-pages/tldr
