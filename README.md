@@ -9,6 +9,7 @@ To run, simply overwrite `brew-taps.txt`, `brew-formulae.txt`, and `brew-casks.t
 If you would like to generate a list of installed brew taps, formulae, and casks on an existing machine, simply run:
 
 ```bash
+brew tap > brew-taps.txt
 brew leaves > brew-formulae.txt
 brew cask list > brew-casks.txt
 ```
