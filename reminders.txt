@@ -1,8 +1,6 @@
 # Apps
-Adobe CS6 Master Collection
+Adobe Illustrator
 Parallels Desktop
-Keybase
-GPG Keychain
 
 # Command-line Tools
 pdflatex via MacTeX (https://www.tug.org/mactex/)
@@ -18,23 +16,3 @@ pdflatex via MacTeX (https://www.tug.org/mactex/)
 * Kali Linux Repository `7D8D0BF6`
 * Tails Developers `58ACD84F`
 * Tor Browser Developers `93298290`
-
-# Google Drive Folders
-CERN
-CIA
-Code
-Cruz
-Crypto
-Environment
-Finances
-Google
-LaTeX
-Microamps
-NASA
-NSA
-Projects
-Reading
-Recipes
-Resumes
-RFCx
-Website
