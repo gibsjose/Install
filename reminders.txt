@@ -2,7 +2,7 @@
 Adobe CS6 Master Collection
 Parallels Desktop
 Keybase
-1Password
+GPG Keychain
 
 # Command-line Tools
 pdflatex via MacTeX (https://www.tug.org/mactex/)
@@ -10,6 +10,8 @@ pdflatex via MacTeX (https://www.tug.org/mactex/)
 # Installations
 [P4Merge Git Setup](https://gist.github.com/tony4d/3454372)
 [gdb](http://sourceware.org/gdb/wiki/BuildingOnDarwin)
+[atom](https://github.com/gibsjose/atom) (run `apm install package-sync` first)
+[fish](https://github.com/gibsjose/fish)
 
 # GPG Keys to Import (with GPG Keychain)
 * GPGTools Team `00D026C4`

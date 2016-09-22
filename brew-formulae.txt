@@ -3,17 +3,13 @@ avrdude
 gibsjose/utils/bash-utilities
 bcrypt
 gibsjose/crypto/bcrypt-hash
-# curl
-# emacs
 fish
 gdb
 gnupg
-# hub
 lynx
 keybase
 minicom
 gibsjose/utils/nacronym
-# node
 openssl
 pandoc
 pass

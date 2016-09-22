@@ -14,7 +14,7 @@ google-chrome
 google-drive
 gpgtools
 hashcat
-mactex
+# mactex
 p4merge
 # recordit
 skype
