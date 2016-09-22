@@ -44,7 +44,7 @@ if exists 'brew-cask'; then
 elif exists 'brew'; then
     if prompt 'Homebrew Cask'; then
         echo "> Installing Homebrew Cask"
-        brew install caskroom/cask/brew-cask
+        brew tap caskroom/cask
         BREW_CASK_DIR=`command -v brew-cask`
         echo "  Installed Homebrew Cask to $BREW_CASK_DIR"
         echo
