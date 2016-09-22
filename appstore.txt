@@ -1,17 +1,3 @@
 Xcode
-Codebox
-Deliveries
 Disk Map
-Pixelmator
-Intensify
-Noiseless
-Focus 2
-Airmail 2
-Pushbullet
-Monity
-Dropzone 3
-Sparkle
-iConvert Icons
-Yoink
-BetterSnapTool
-iCircuit
+Airmail 3

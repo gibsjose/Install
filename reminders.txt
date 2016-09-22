@@ -1,7 +1,8 @@
 # Apps
-Adobe CS5 Master Collection Trial (https://helpx.adobe.com/creative-suite/kb/cs5-product-downloads.html)
-Parallels Desktop 9
-Synergy
+Adobe CS6 Master Collection
+Parallels Desktop
+Keybase
+1Password
 
 # Command-line Tools
 pdflatex via MacTeX (https://www.tug.org/mactex/)
@@ -9,3 +10,29 @@ pdflatex via MacTeX (https://www.tug.org/mactex/)
 # Installations
 [P4Merge Git Setup](https://gist.github.com/tony4d/3454372)
 [gdb](http://sourceware.org/gdb/wiki/BuildingOnDarwin)
+
+# GPG Keys to Import (with GPG Keychain)
+* GPGTools Team `00D026C4`
+* Kali Linux Repository `7D8D0BF6`
+* Tails Developers `58ACD84F`
+* Tor Browser Developers `93298290`
+
+# Google Drive Folders
+CERN
+CIA
+Code
+Cruz
+Crypto
+Environment
+Finances
+Google
+LaTeX
+Microamps
+NASA
+NSA
+Projects
+Reading
+Recipes
+Resumes
+RFCx
+Website

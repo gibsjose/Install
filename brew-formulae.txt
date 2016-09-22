@@ -1,22 +1,22 @@
 osx-cross/avr/avr-libc
 avrdude
+gibsjose/utils/bash-utilities
 bcrypt
 gibsjose/crypto/bcrypt-hash
-cryptopp
-emacs
+# curl
+# emacs
 fish
 gdb
 gnupg
-hub
-irssi
-john-jumbo
-libconfig
+# hub
 lynx
+keybase
 minicom
-node
+gibsjose/utils/nacronym
+# node
+openssl
 pandoc
-primesieve
-profanity
+pass
 python3
 scrypt
 source-highlight

@@ -3,12 +3,12 @@ adobe-reader
 alfred
 arduino
 atom
+bartender
 boxcryptor
 cathode
-coolterm
+# coolterm
 encryptr
 flux
-gitify
 go2shell
 google-chrome
 google-drive
@@ -16,7 +16,7 @@ gpgtools
 hashcat
 mactex
 p4merge
-recordit
+# recordit
 skype
 slack
 spectacle
@@ -24,4 +24,5 @@ spotify
 steam
 telegram
 the-unarchiver
+whatsapp
 wireshark
